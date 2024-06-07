@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,700;0,900;1,900&family=Rubik:wght@300;700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: rgba(122, 122, 124, 0.274);
+ }
+ header {
+
+    background-color: black;
+
+    line-height: 2.5rem;
+
+    margin-top: 0;
+
+}
+article,form{
+    background-image: url(/imagens1/fotos/linhas.jpg);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    height: 100pxx;
+}
+ 
+
+.logo {
+
+    text-align: center;
+
+}
+
+ 
+
+.logo img {
+
+    width: 26vw;
+
+    margin: 1rem 0 0 0;
+
+}
+
+ 
+
+header ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: -1rem 0 0 0;
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+ 
+
+header ul li  {
+
+   
+        list-style: none;
+        padding: 0;
+        margin: -1rem 0 0 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+
+
+ 
+
+nav a {
+
+    text-decoration: none;
+
+    color: #fff;
+
+}
+
+ h
+
+nav a:hover {
+
+    border-bottom: 2px solid #ff0000;
+
+}
+ h1{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 30px;
+ }
+ h2{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+ }
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex ;
+    justify-content: space-around;
+    background-color: #000000;
+}
+   
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 40px; 
+    font-size: 1.2em;
+    padding: 10px 20px; 
+
+}
+nav a:hover {
+    color:#ce3009;
+}
+section img{
+   height: 70%;
+   width: 100%;
+
+}
+footer {
+    margin-top: 1rem;
+    background-color: #000;
+    color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5rem;
+}  
+
+    .descricao {
+        margin: 0 0 0 1.5rem;
+        font-weight: 100;
+        font-size: small;
+    }
+
+    .sociais {
+        margin: 0 1.5rem 0 0;
+        display: flex;
+        align-items: center;
+        word-spacing: 20px;
+    }
+
+    .sociais img {
+        width: 40px;
+        height: 40px;
+    }
+
+@media screen and (min-width: 510px) { 
+    .logo img {
+
+        width: 20vw;
+
+    }
+    header {
+        
+            background-color: black;
+            line-height: 2.5rem;
+            margin-top: 0;
+        
+        display: flex;
+
+        justify-content: space-between;
+
+    }
+
+ 
+
+    .logo {
+
+        margin: 0 2rem;
+
+    }
+
+ 
+
+    .logo img{
+
+        width: 10vw;
+
+    }
+
+ 
+
+    nav {
+
+        display: flex;
+
+        align-items: end;
+
+    }
+
+ 
+
+    nav li {
+
+        margin: 0 2rem;
+
+    }
+   
+
+    #galeria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #galeria img {
+        width: 20.5%;
+        
+        margin-top: 1.25%;
+        transition: 0.8s all;
+    }
+
+    #galeria img:hover{
+        width: 25%;
+        box-shadow: 10px 10px 10px 10px #667;
+    }
+   
+} 
+    

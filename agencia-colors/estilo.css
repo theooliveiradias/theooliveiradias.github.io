@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Oswald:wght@400;700&display=swap');
+
+/*
+    font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
+
+*/
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+img, iframe {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    background-color: #fff;
+}
+
+header div {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 0.6rem;
+    transition: all 0.6s;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav a:hover, nav a:active {
+    color: rgb(255, 239, 60);
+    background-color: rgb(0, 0, 0);
+}
+
+section {
+    height: 73vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+    .conteudo {
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    section h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+    
+    section p {
+        line-height: 1.9rem;  /* configura o espaço entre as linhas */
+    }
+
+
+    .cta {
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 3px;  /* configura o espaço entre as letras */
+        text-decoration: none;
+        font-size: .8rem;
+        font-weight: 700;
+        background-color: rgb(255, 239, 60);
+        padding: 1.15rem 1.8rem ;
+        line-height: 5.5rem;
+        color: #000;
+    }
+
+    .cta:hover, .cta:active {
+        color:rgb(255, 239, 60);
+        background-color: rgb(0, 0, 0);
+    }
+
+    .cta::before {
+        content: "+ ";
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+
+    .verde-agua {
+        background: rgb(38, 204, 202);
+        color: rgb(255, 255, 255)
+    }
+
+
+    #produto {
+        background-image: url(imagens/fundo-produto.jpg);
+        background-size: cover;  /* tamanho do fundo */
+        background-position-x: center; /* posição do fundo */
+    }
+
+    #ux {
+        background-image: url(imagens/fundo-ux.jpg);
+        color: rgb(255, 255, 255);
+    }
+
+    #motion {
+        background-image: url(imagens/fundo-motion.jpg);
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    #brand {
+        background-image: url(imagens/fundo-brand.jpg);
+        color: rgb(255, 255, 255);
+    }
+
+    #print {
+        background-image: url(imagens/fundo-print.jpg);
+        background-size: cover;
+        background-position-x: center;
+        color: rgb(255, 255, 255);
+    }
+
+
+
+
+

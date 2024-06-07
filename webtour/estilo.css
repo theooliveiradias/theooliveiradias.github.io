@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* 
+        para criar variáveis usamos:
+        --nome-da-variavel: valor;
+     */
+    --cor-primaria: rgb(65, 115, 152);
+    --cor-secundaria: lightblue;
+    --cor-texto: #333;
+    --text-desktop: 18px;
+    --fonte-titulo: 'Roboto', sans-serif;
+    --fonte-texto: 'Roboto', sans-serif;
+}
+
+img, iframe, video {
+    max-width: 100%;
+}
+
+html {
+    font-size: var(--text-desktop);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-texto);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fonte-titulo);
+}
+
+.logo {
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-texto);
+}
+
+    header a:hover {
+        border-bottom: 2px var(--cor-primaria) solid;
+    }
+
+.busca {
+    display: none;
+}
+
+.hero {
+    background-image: url(imagens/fundo-header.jpg);
+    background-size: cover;
+    /* background-position: right; */
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 0.8rem;
+}
+
+    .hero-conteudo {
+        color: #fff;
+        padding: 2rem;
+    }
+
+    .hero-conteudo h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .hero-conteudo p {
+        margin: 0 0 1.7rem 0;
+    }
+
+    .hero-conteudo a {
+        text-decoration: none;
+        color: #fff;
+        padding: .7rem 1.2rem;
+        background-color: var(--cor-primaria);
+        margin-top: 2rem;
+        transition: all 0.8s;
+    }
+
+    .hero-conteudo a:hover {
+        background-color: #06365acc;
+    }
+
+.contorno {
+    -webkit-text-stroke: #fff 2px;
+    color: transparent;
+}
+
+.principal-home h2 {
+    margin: 5rem 0 3rem 0;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+    .card1, .card2, .card3, .card4 {
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+    }
+
+    .card1 {
+        background-image: url(imagens/colombia.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card2 {
+        background: url(imagens/grecia.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card3 {
+        background: url(imagens/egito.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card4 {
+        background: url(imagens/japao.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .card-conteudo {
+        background-image:linear-gradient(transparent, black);
+        padding: 1.5rem;
+        color: #fff;
+        width: 100%;
+    }
+
+    .card-conteudo a {
+        text-decoration: none;
+        color: #fff;
+        padding: .7rem 1.2rem;
+        background-color: var(--cor-primaria);
+        margin-top: 2rem;
+        transition: all 0.8s;
+    }
+
+    .card-conteudo a:hover {
+        background-color: #06365acc;
+    }
+
+    .card-conteudo h3 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        border-bottom: 4px solid var(--cor-primaria);
+        margin: 0;
+    }
+
+    .card-conteudo p {
+        margin: 1rem 0 1.5rem 0;
+        line-height: 2rem;
+    }
+
+
+footer {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    line-height: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .descricao {
+    width: 100%;
+}
+
+footer .descricao p:first-child {
+    text-align: center;
+}
+
+footer .descricao img {
+    width: 50%;
+    height: 50%;
+}
+
+footer .descricao, footer .menu, footer .social {
+    padding: 1.5rem;
+}
+
+footer .menu, footer .social {
+    width: 48%;
+}
+
+footer .menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer .menu li {
+    border-bottom: 1px solid #fff;
+}
+
+footer .menu li:hover {
+    background-color: var(--cor-secundaria);
+}
+
+footer .menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 0.5rem;
+}
+
+footer .menu a:hover {
+    color: var(--cor-primaria);
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+}
+
+/* FORMULÁRIO */
+.formulario {
+    padding: 0 1rem;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#form-contato label {
+    display: block;
+	width: 20%;
+	float: left;
+	font-weight:bold;
+    border-bottom: 1px solid var(--cor-primaria);
+}
+
+
+#form-contato input {
+    border: solid 1px var(--cor-primaria);
+	border-radius:5px;
+	height:30px;
+	width: 70%;
+	box-shadow:rgba(0,0,0,0.3) 1px 1px 2px 1px;
+	/* cor da sombra, desl. x, desl. y,  desfoque da sombra, tamanho da sombra */
+}
+
+#form-contato textarea{
+	border: solid 1px var(--cor-primaria);
+	border-radius:5px;
+	box-shadow:rgba(0,0,0,.3) 1px 1px 2px 1px;
+	height:60px;
+	width: 70%;
+}
+
+.enviar {
+	border: 2px solid var(--cor-primaria);
+	background-image: linear-gradient(var(--cor-primaria),#030367);
+	border-radius: 5px;
+	padding:5px;
+	color:white;
+	width: 90.4%;
+	margin-bottom: 20px;
+}
+
+.pacotes h2 {
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    justify-content: center;
+}
+
+
+
+/* media queries para telas acima de 680px 
+@media screen and (min-width: 680px) {
+
+
+}*/
+
+@media (width >= 680px) { 
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+    }
+
+    .busca {
+        display: block;
+        text-align: right;
+    }
+
+    .busca input {
+        border-radius: 8px;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .card1, .card2, .card3, .card4 {
+        width: 24vw;
+    }
+
+    footer .descricao, footer .menu, footer .social {
+        width: 32%;
+    }
+
+    /*
+    footer .descricao img {
+        width: 50%;
+        height: 50%;
+    }
+    */
+
+    footer .descricao p {
+        font-size: 0.9rem;
+    }
+
+    footer .menu, footer .social {
+        margin-top: 2rem;
+    }
+
+    .contato-colunas {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .formulario, .mapa {
+        width: 49%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale com a WebTour</title>
+    <meta name="description" content="Entre em contato com nossa equipe.">
+    
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>
+                <a href="webtour.html" title="página inicial">
+                    <img src="imagens/logotipo-webtour.png" alt="Webtour Logo">
+                </a>
+            </p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="webtour.html" title="página inicial WebTour">HOME</a></li>
+
+                <li><a href="pacotes.html" title="Pacotes Webtour">PACOTES</a></li>
+                
+                
+
+                <li><a href="contato.html" title="Fale conosco">CONTATO</a></li>
+            </ul>
+        </nav>
+        <div class="busca">
+            <form action="">
+                <input type="search" placeholder="Qual é o seu destino?">
+            </form>
+        </div>
+    </header>
+
+
+    <main class="contato">
+        <h2>Entre em contato conosco</h2>
+        <p>Para entrar em contato conosco, preencha o formulário abaixo, ligue para 11 2345-6789 ou visite-nos pessoalmente:</p>
+
+        <section class="contato-colunas">
+            <div class="formulario">
+                <form action="envia.php" method="post" id="form-contato">
+
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email"> 
+                    </p>
+
+                    <p>
+                        <label for="whats">WhatsApp:</label>
+                        <input type="tel" id="whats" name="whats" placeholder="DDD + Whats">
+                    </p>
+
+                    <p>
+                        <label for="msg">Mensagem:</label>
+                        <textarea name="msg" id="msg"></textarea>
+                    </p>
+
+                    <button type="submit" class="enviar">Enviar</button>
+                </form>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14632.702512793565!2d-46.5402552!3d-23.5261848!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e45de28bb23%3A0x1d2ed3122aae28a7!2sSenac%20Penha!5e0!3m2!1spt-BR!2sbr!4v1693917546407!5m2!1spt-BR!2sbr" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
+    
+        
+    <footer>
+        <section class="descricao">
+            <p><a href="webtour.html" title="página inicial"><img src="imagens/logotipo-webtour-branco.png" alt="logo WebTour"></a></p>
+            <p>A WebTour nasceu com a proposta de se tornar uma agência de turismo diferente, pois além dos roteiros prontos, permitimos que você crie o seu próprio, baseado em seus interesses pessoais, disponibilidade e possibilidades.</p>
+            <p>Conheça o mundo, do seu jeito!</p>
+        </section>
+
+        <nav class="menu">
+            <h4>Navegue:</h4>
+            <ul>
+                <li><a href="webtour.html" title="página inicial WebTour">HOME</a></li>
+                <li><a href="pacotes.html" title="Pacotes Webtour">PACOTES</a></li>
+               
+                <li><a href="contato.html" title="Fale conosco">CONTATO</a></li>
+            </ul>
+        </nav>
+
+        <section class="social">
+            <h4>Siga-nos nas redes:</h4>
+            <p>
+                <a href="https://instagram.com" title="Instagram" target="_blank"><img src="imagens/instagram.png" alt="Logo Instagram"></a>
+
+                <a href="https://facebook.com" title="facebook" target="_blank"><img src="imagens/facebook.png" alt="Logo Facebook"></a>
+
+                <a href="https://youtube.com" title="youtube" target="_blank"><img src="imagens/youtube.png" alt="Logo youtube"></a>
+
+                <a href="https://wa.me/5511989765432" title="WhatsApp" target="_blank"><img src="imagens/whatsapp.png" alt="Logo WhatsApp"></a>
+            </p>
+        </section>
+    </footer>
+    
+
+    
+</body>
+</html>
