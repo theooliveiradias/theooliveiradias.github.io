@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: black;
+    background-color: rgb(85, 83, 83);
     height: 100vh;
 }
 .flex{
@@ -28,14 +28,14 @@ header .iterface{
     align-items: center;
 }
 header a{
-    color: rgb(123, 126, 126);
+    color: rgb(255, 255, 255);
    text-decoration: none;
    display: inline-block;
    transition: .2s;
     
 }
 header a:hover{
-    color: rgb(247, 255, 255);
+    color: rgba(27, 185, 185, 0.671);
    transform: scale(1.2);
     
 }
@@ -53,7 +53,7 @@ header nav ul li{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #f010ca;
+    background-color: #79afff;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -62,7 +62,7 @@ header nav ul li{
 }
 
   button:hover{
-box-shadow: 0px  0px 10px  #be0da1;
+box-shadow: 0px  0px 10px  #79afff;
  transform: scale(1.05);
 }
 section.topodosite{
@@ -77,7 +77,7 @@ section.topodosite .flex{
     line-height: 40px;
 }
 .topodosite h1 span{
-    color: #f010ca;
+    color: #79afff;
 }
 .topodosite .txt-topo-site p{
     color: #fff;
@@ -87,7 +87,7 @@ section.topodosite .flex{
   content: ""; 
   position: absolute; 
   height: 100%;
-  border-left: 2px solid #be0da1;
+  border-left: 2px solid #79afff;
   right:-10px;
   opacity: 1;
   animation: cursor .8s infinite;
@@ -105,7 +105,7 @@ section.topodosite .flex{
 }
 .txt-animado ::before{
     content:"";
-    color: #be0da1; 
+    color: #79afff; 
     animation: palavras 10s infinite;
 }
 @keyframes cursor{
@@ -125,12 +125,10 @@ section.topodosite .flex{
         content: "ux/ui Desiner";
     }
     
-    61%,80%{
+    61%,100%{
         content: " Graphic Designer";
     }
-    81%,100%{
-        content: " Motion Designer";
-    }
+    
 }
 .topodosite .img-topo-site {
     position:relative;
@@ -157,7 +155,7 @@ h2.titulo{
     text-align: center;
 }
 h2.titulo span{
-    color: #be0da1;
+    color: #79afff;
 }
 .especialidades .especialidade-box{
     color: #fff;
@@ -172,7 +170,7 @@ h2.titulo span{
 }
 .especialidades .especialidade-box i {
     font-size: 68px;
-    color: #f010ca;
+    color: #79afff;
 
 }
 .especialidades .especialidade-box h3 {
@@ -201,7 +199,7 @@ section.sobre .flex{
 
 }
 .sobre .txt-sobre h2  span {
-   color: #be0da1;
+   color: #79afff;
     
 }
 .sobre .txt-sobre p {
@@ -213,7 +211,7 @@ section.sobre .flex{
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #e42cc5;
+    background-color: #79afff;
     font-size: 33px;
  }
 
@@ -281,7 +279,7 @@ footer .flex{
 }
 footer .line-footer {
     padding: 20px 0px;
-    color:#be0da1;
+    color:#79afff;
   
 }
 .borda {
