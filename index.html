@@ -3,146 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Théo Oliveira Dias — desenvolvimento fullstack, prompt engineering e automações com agentes de IA.">
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="style.css">
-    <title>portifolio Théo Oliveira Dias</title>
+    <title>Portfólio Théo Oliveira Dias</title>
 </head>
 <body>
+    <video class="video-fundo" autoplay muted loop playsinline>
+        <source src="videos/video-de-fundo.mp4" type="video/mp4">
+    </video>
+    <div class="fundo-cinza"></div>
+
     <header>
-         <div class="iterface">
+        <div class="iterface">
             <div class="logo">
                 <a href="#">
-                    <img src="images/logo.png" alt="logo agência">
+                    <img src="images/logo-portfolio.png" alt="logo Théo Oliveira Portfólio">
                 </a>
             </div>
-       
-<nav class="menu-desktop">
-        <ul>
-           
-            <li><a href="#especialidades">Especialidades</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
 
-        </ul>
-    </nav>
-    <div class="btn-contato">
-        <a href="https://api.whatsapp.com/send?phone=+5511955563895&text=Olá+vim+do+seu++portfólio%2C+gostaria+de+contratar+um+serviço">
-            <button>contato</button>
-        </a>
-    </div>   
-    </div>
+            <div class="header-menu">
+                <nav class="menu-desktop">
+                    <ul>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#experiencia">Experiência</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                    </ul>
+                </nav>
+
+                <div class="btn-contato">
+                    <a href="https://api.whatsapp.com/send?phone=+5511955563895&text=Olá+vim+do+seu++portfólio%2C+gostaria+de+contratar+um+serviço">
+                        <button>contato</button>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
-   <main>
-    <section class="topodosite">
+
+    <main>
+        <section class="topodosite">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <div class="txt-animado">Théo Oliveira Dias <span id="digitando"></span></div>
+                        <p>22 anos, estudante de Análise e Desenvolvimento de Sistemas (Infnet) e formado em Produção Multimídia (FIAP). Atuando atualmente na área de produto na Nubank Crypto, desenvolvo soluções por meio de agentes de IA, automações e construção de dashboards, colaborando com stakeholders.</p>
+                    </div>
+                    <div class="img-topo-site">
+                        <img src="images/pessoa.png" alt="foto perfil">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="especialidades" class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
+                <div class="flex">
+                    <div class="especialidade-box"><i class="bi bi-code-square"></i>
+                        <h3>Fullstack</h3>
+                        <p>Desenvolvimento de aplicações web de ponta a ponta, do front ao back: interfaces responsivas com HTML5, CSS3 e JavaScript, back-end com Python e PHP e integração de APIs e bancos de dados como Databricks.</p>
+                    </div>
+                    <div class="especialidade-box"><i class="bi bi-chat-square-text"></i>
+                        <h3>Prompt Engineer</h3>
+                        <p>Prompt engineering avançado com Claude e Cursor no dia a dia: estruturação de contexto, instruções e validações para que modelos de IA entreguem respostas confiáveis e soluções prontas para o negócio.</p>
+                    </div>
+                    <div class="especialidade-box"><i class="bi bi-robot"></i>
+                        <h3>Automações e Agentes</h3>
+                        <p>Desenvolvimento e orquestração de agentes de IA que analisam dados, preenchem planilhas no Google Sheets e comunicam resultados no Slack, construídos com Python, n8n e Zapier.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre"><img src="images/foto.png" alt="foto de Théo Oliveira Dias"></div>
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, SOU<span> THÉO OLIVEIRA DIAS</span></h2>
+                        <p>Tenho 22 anos e moro na Zona Leste de São Paulo. Sou estudante de Análise e Desenvolvimento de Sistemas na Infnet, com ênfase em banco de dados, lógica de programação e desenvolvimento orientado a IA, e formado em Produção Multimídia (UX e Web Design) pela FIAP. Atualmente atuo na área de produto da Nubank Crypto, no time de Wallet.</p>
+                        <p>Tenho experiência com prompt engineering avançado, criando soluções por meio da automação de processos: desenvolvo agentes que analisam dados, preenchem planilhas no Google Sheets e comunicam os resultados em canais do Slack, construídos com ferramentas como n8n e Zapier. Uso Cursor e Claude no dia a dia e colaboro continuamente com stakeholders, traduzindo necessidades de negócio em soluções entregáveis.</p>
+
+                        <div class="skills">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Databricks</span>
+                            <span>Slack API</span>
+                            <span>Google Sheets API</span>
+                            <span>n8n</span>
+                            <span>Zapier</span>
+                            <span>Claude</span>
+                            <span>Cursor</span>
+                            <span>Jira</span>
+                            <span>UX/Usabilidade</span>
+                        </div>
+
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/theooliveiradias/"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/theooliveiradias"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://api.whatsapp.com/send?phone=+5511955563895&text=Olá+vim+do+seu++portfólio%2C+gostaria+de+contratar+um+serviço"><button><i class="bi bi-whatsapp"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="experiencia">
+            <div class="interface">
+                <h2 class="titulo">MINHA <span>EXPERIÊNCIA</span></h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-tag">2026 — Atual</div>
+                        <h3>Jovem Aprendiz — Product Operation Nubank Crypto (Wallet Team)</h3>
+                        <h4>Nubank</h4>
+                        <ul>
+                            <li><strong>Agentes de IA para o negócio:</strong> desenvolvi agentes de IA customizados integrados ao Slack que consultam dados de transações no Databricks, executam validações automatizadas e entregam resultados estruturados em Google Sheets e canais do Slack, eliminando rotinas manuais de checagem do time.</li>
+                            <li><strong>Ferramenta interna para BPOs:</strong> construí do zero uma interface conectada ao Databricks em que BPOs registram solicitações de clientes; os dados alimentam planilhas automaticamente e disparam notificações via agentes de IA no Slack, acelerando o fluxo de atendimento.</li>
+                            <li><strong>Integração de APIs e dados:</strong> orquestrei Slack API, Google Sheets API e Databricks em fluxos ponta a ponta com Python, sem depender de infraestrutura backend complexa.</li>
+                            <li><strong>Colaboração ágil:</strong> trabalho com Product Owners, Engenheiros de Software e stakeholders de negócio em sprints no Jira e em syncs técnicos semanais em inglês, traduzindo necessidades em soluções entregáveis.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="subtitulo">Formação</h3>
+                <div class="flex formacao">
+                    <a class="formacao-box" href="https://ead.infnet.edu.br/faculdade/cursos/ads-full-stack-e-automacao" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-mortarboard-fill"></i>
+                        <h4>Análise e Desenvolvimento de Sistemas</h4>
+                        <p class="instituicao">Infnet — Em andamento</p>
+                        <p>Ênfase em Banco de Dados, Lógica de Programação e Desenvolvimento orientado a IA.</p>
+                    </a>
+                    <a class="formacao-box" href="https://on1.fiap.com.br/aluno/Certificado/Certificado/PreviewDocumento?caminhoArquivo=1e6978b7-7aa9-4000-841a-50ae8c415baa.pdf&amp;isOrigemAWS=True&amp;rm=0" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-award-fill"></i>
+                        <h4>Produção Multimídia</h4>
+                        <p class="instituicao">FIAP — Concluído</p>
+                        <p>Ênfase em UX Design, Usabilidade e Web Design.</p>
+                    </a>
+                    <a class="formacao-box" href="https://app.voxy.com/certificates/proficiency-test/69e397c96e907073769ccfc2/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-translate"></i>
+                        <h4>Idiomas</h4>
+                        <p class="instituicao">Português — Nativo</p>
+                        <p>Inglês — Intermediário (uso profissional em reuniões técnicas semanais).</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="portifolio">
+            <div class="interface">
+                <h2 class="titulo">MEUS<span> PROJETOS</span></h2>
+
+                <div class="ano-projetos">
+                    <h3 class="ano">2026</h3>
+                    <div class="flex">
+                        <div class="img-port" style="background-image: url(images/power-focus-mobile.jpg);">
+                            <div class="overlay">
+                                <a href="power-focus/powerfocus.html">Power Focus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ano-projetos">
+                    <h3 class="ano">2024</h3>
+                    <div class="flex">
+                        <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                            <div class="overlay">
+                                <a href="webtour/webtour.html">WebTour</a>
+                            </div>
+                        </div>
+                        <div class="img-port" style="background-image: url(images/layout-do-projeto1.jpg);">
+                            <div class="overlay">
+                                <a href="agencia-colors/agenciacolors.html">Agência Colors</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ano-projetos">
+                    <h3 class="ano">2023</h3>
+                    <div class="flex">
+                        <div class="img-port" style="background-image: url(images/layout-do-projeto.jpg);">
+                            <div class="overlay">
+                                <a href="giro_cultural/girocultural.html">Giro Cultural</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
         <div class="interface">
-            <div class="flex">
-            <div class="txt-topo-site">
-                <div class="txt-animado">Théo Oliveira Dias  <span> </span></div>
-                <p> 21 anos, Graduado na faculdade de informática e administração Paulista (FIAP), atuando como Web designer
-
-
-                </p></h1>
-            <div class="btn-contato">
-                <a href="#" >
-                    
-                </a>
-            </div>
-        </div>
-                <div class="img-topo-site">
-                    <img src="images/pessoa.png" alt="foto perfil">
-                </div>
-            
-            </div>
-        </div>
-
-    </section>
-    <section id="especialidades">
-    <section class="especialidades">
-        <div class="interface"> <h2 class="titulo"> MINHAS <span>ESPECIALIDADES</span></h2>
-            <div class="flex">
-            
-
-          
-            
-            <div class="especialidade-box"><i class="bi bi-code-square"></i>
-                <h3> Front end</h3>
-                <p>Conhecimento de criação de sites desenvolvimento web responsivo atravéz de codigo, usando as mais recentes tecnologias como html css  Java Script, também utilizando low/no code atravéz de wordpress . </p>
-                </div>
-            <div class="especialidade-box"><i class="bi bi-window-split"></i>
-                <h3> UI Design</h3>
-                <p>Dominio em softwares  Edição de imagem: Adobe Photoshop XD, Illustrator,Figma. Para Criação de mídias e wireframes </p>
-            </div>
-            <div class="especialidade-box"><i class="bi bi-camera-reels-fill"></i>
-
-                <h3>Motion Graphics </h3>
-                <p>Edição de video e animação para post em mídia sociais, animações de sites.Experiência nos melhores softwares de Edição de Vídeo do mercado: Adobe Premiere, Adobe After Effects, Final Cut,  Figma.</p>
-         </div>
-        </div>
-    </section></section>
-<section id="sobre">
-    <section class="sobre">
-    <div class="interface">
-        <div class="flex">
-            <div class="img-sobre"><img src="images/foto.png" alt=""></div>
-            <div class="txt-sobre">
-                <h2>MUITO PRAZER, SOU<span> THEO OLIVEIRA DIAS</span></h2>
-                <P>Olá! Meu nome é Théo  tenho 21 anos . Atuo  no desenvolvimento de sites, wireframes prototipação de websites   responsivos(ui), com estudos de experiência do usuário(ux) e muitos outros projetos. Conheça mais sobre mim abaixo e confira meu portfólio com alguns trabalhos. </P>  <div class="btn-social">
-                    <a href="https://www.linkedin.com/in/théo-oliveira-dias-950101271/"><button><i class="bi bi-linkedin"></i></button></a>
-                   <a href="https://github.com/theooliveiradias"><button><i class="bi bi-github"></i></button></a>
-                   <a href="https://api.whatsapp.com/send?phone=+5511955563895&text=Olá+vim+do+seu++portfólio%2C+gostaria+de+contratar+um+serviço"><button><i class="bi bi-whatsapp"></i></button></a>
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo-portfolio.png" alt="logo Théo Oliveira Portfólio">
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://www.linkedin.com/in/theooliveiradias/"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/theooliveiradias"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://api.whatsapp.com/send?phone=+5511955563895&text=Olá+vim+do+seu++portfólio%2C+gostaria+de+contratar+um+serviço"><button><i class="bi bi-whatsapp"></i></button></a>
+                    </div>
                 </div>
             </div>
-        
-          
-        </div>
-    </div>
-</section></section>
-<section id="projetos">
-<section class="portifolio">
-    <div class="interface">
-        <h2 class="titulo"> MEUS<span> PROJETOS</span></h2>
-        <div class="flex">
-            <div class="img-port" style="background-image: url(images/layout-do-projeto1.jpg);"> <div class="overlay">
-               <a href="/agencia-colors/agenciacolors.html"> agencia colors</a>
-            </div> 
-            </div>
-            <div class="img-port" style="background-image: url(images/layout-do-projeto.jpg);"><div class="overlay">
-                <a href="/giro_cultural/girocultural.html">Giro Cultural</a>
-            </div></div> 
-            <div class="img-port" style="background-image: url(images/imagem.jpg);"> 
-                <div class="overlay">
-                   <a href="/webtour/webtour.html"> WebTour</a>
-                </div>
-        </div>
-    </div>
-</section></section>
-   </main>
-    
-   <footer>
-    <div class="interface">
-       <p>
-
-       </p>
-    
-   <div class="line-footer">
-    <div class="flex">
-    <div class="logo-footer">
-        <img src="images/logo.png" alt="">
-    </div>
-        <div class="btn-social">
-                <a href="https://www.linkedin.com/in/théo-oliveira-dias-950101271/"><button><i class="bi bi-linkedin"></i></button></a>
-               <a href="https://github.com/theooliveiradias"><button><i class="bi bi-github"></i></button></a>
-               <a href="https://api.whatsapp.com/send?phone=+5511955563895&text=Olá+vim+do+seu++portfólio%2C+gostaria+de+contratar+um+serviço"><button><i class="bi bi-whatsapp"></i></button></a>
+            <div class="borda"></div>
+            <div class="line-footer">
+                <p><i class="bi bi-envelope-at"> <a href="mailto:theooliveiradias2003@gmail.com">theooliveiradias2003@gmail.com</a></i></p>
             </div>
         </div>
-    <div class="borda"></div>
-        <div class="line-footer ">
-            <p><i class="bi bi-envelope-at"> <a href="mailto:theooliveiradias2003@gmail.com">theooliveiradias2003@gmail.com</a></i></p>
-        </div>
-
-        </div>
-</footer>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

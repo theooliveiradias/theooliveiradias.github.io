@@ -7,25 +7,76 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: rgb(85, 83, 83);
+    background-color: #000;
     height: 100vh;
+}
+.video-fundo{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.fundo-cinza{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(85, 83, 83, 0.6);
+    z-index: -1;
 }
 .flex{
     display: flex;
    
 }
-.iterface{
+.iterface, .interface{
     max-width: 1200px;
     margin: 0 auto;
+}
+html{
+    scroll-behavior: smooth;
 }
 /* header */
 header{
     padding: 40px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: padding .3s, box-shadow .3s, background-color .3s;
+}
+header.rolando{
+    padding: 15px 4%;
+    background-color: rgba(85, 83, 83, 0.6);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 header .iterface{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+header.rolando .iterface{
+    justify-content: center;
+    gap: 40px;
+}
+header .logo img{
+    width: 150px;
+    display: block;
+}
+header.rolando .logo{
+    display: none;
+}
+main section{
+    scroll-margin-top: 90px;
+}
+header .header-menu{
+    display: contents;
+}
+header nav a{
+    font-size: 22px;
+    font-weight: 600;
+}
+.logo-footer img{
+    width: 120px;
 }
 header a{
     color: rgb(255, 255, 255);
@@ -83,52 +134,21 @@ section.topodosite .flex{
     color: #fff;
     margin: 40px 0;
 }
-.txt-animado span ::after{
-  content: ""; 
-  position: absolute; 
-  height: 100%;
-  border-left: 2px solid #79afff;
-  right:-10px;
-  opacity: 1;
-  animation: cursor .8s infinite;
-  width: calc(100% +15px);
-
-}
 .txt-animado{
-    font-size: 45px;
+    font-size: 38px;
+    font-weight: bold;
     color: #fff;
-    
 }
-.txt-animado .span{
-    position: relative;
-
-}
-.txt-animado ::before{
-    content:"";
-    color: #79afff; 
-    animation: palavras 10s infinite;
+.txt-animado #digitando{
+    color: #79afff;
+    border-right: 3px solid #79afff;
+    padding-right: 4px;
+    animation: cursor .8s step-end infinite;
 }
 @keyframes cursor{
-0%{
-    opacity: 0;
-
-} 
-}
-@keyframes palavras {
-    0%,20%{
-        content: "front end";
+    50%{
+        border-color: transparent;
     }
-    21%,40%{
-        content: "Web Designer";
-    }
-    41%,60%{
-        content: "ux/ui Desiner";
-    }
-    
-    61%,100%{
-        content: " Graphic Designer";
-    }
-    
 }
 .topodosite .img-topo-site {
     position:relative;
@@ -163,6 +183,7 @@ h2.titulo span{
     border-radius: 20px;
     transition: .4s;
     margin-top: 45px;
+    flex: 1;
 }
 .especialidades .especialidade-box:hover{
     transform: scale(1.05);
@@ -206,6 +227,19 @@ section.sobre .flex{
     margin: 20px 0;
      text-align: justify;
  }
+.sobre .skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0;
+}
+.sobre .skills span{
+    padding: 6px 16px;
+    border: 1px solid #79afff;
+    border-radius: 30px;
+    color: #79afff;
+    font-size: 14px;
+}
 .btn-social button{
     width: 60px;
     height: 60px;
@@ -214,16 +248,121 @@ section.sobre .flex{
     background-color: #79afff;
     font-size: 33px;
  }
+/* estilo experiência */
+section.experiencia{
+    padding: 80px 4%;
+    color: #fff;
+}
+.experiencia .timeline{
+    margin-top: 60px;
+    border-left: 3px solid #79afff;
+    padding-left: 40px;
+}
+.experiencia .timeline-item{
+    position: relative;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 12px #ffffff15;
+}
+.experiencia .timeline-item::before{
+    content: "";
+    position: absolute;
+    left: -52px;
+    top: 36px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #79afff;
+}
+.experiencia .timeline-tag{
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 30px;
+    background-color: #79afff;
+    color: #111;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.experiencia .timeline-item h3{
+    font-size: 24px;
+}
+.experiencia .timeline-item h4{
+    color: #79afff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.experiencia .timeline-item ul{
+    list-style: none;
+}
+.experiencia .timeline-item li{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.experiencia .timeline-item li strong{
+    color: #79afff;
+}
+.experiencia .subtitulo{
+    font-size: 28px;
+    margin-top: 60px;
+    text-align: center;
+}
+.experiencia .formacao{
+    gap: 30px;
+    margin-top: 30px;
+}
+.experiencia .formacao-box{
+    flex: 1;
+    padding: 30px;
+    border-radius: 20px;
+    transition: .4s;
+    color: #fff;
+    text-decoration: none;
+}
+.experiencia .formacao-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #ffffff25;
+}
+.experiencia .formacao-box i{
+    font-size: 48px;
+    color: #79afff;
+}
+.experiencia .formacao-box h4{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.experiencia .formacao-box .instituicao{
+    color: #79afff;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
 section.portifolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px #ffffff10;
 }
 section.portifolio .flex{
-
-    justify-content: space-around;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+}
+.portifolio .ano-projetos{
     margin-top: 60px;
-
+}
+.portifolio .ano{
+    color: #79afff;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.portifolio .ano::before,
+.portifolio .ano::after{
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #ffffff25;
 }
 .img-port{
     width: 350px;
@@ -271,7 +410,8 @@ section.portifolio .flex{
 }
 footer{
     padding: 40px 4%;
-    box-shadow: 0 0 40px 10px #ffffff10;
+    box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.25);
+    background-color: rgb(85, 83, 83);
 }
 
 footer .flex{
@@ -304,7 +444,17 @@ footer .line-footer p i{
 
    }
 
-   h2.titulo{
+   section.portifolio .flex{
+    align-items: center;
+   }
+   .experiencia .timeline{
+    padding-left: 25px;
+   }
+   .experiencia .timeline-item::before{
+    left: -37px;
+   }
+
+   h2.titulo, .txt-animado{
     font-size: 30px;
    line-height: 34px;
 }
@@ -317,6 +467,16 @@ footer .line-footer p i{
         /* cabeçalho */
         .menu-desktop,.btn-contato{
             display: none;
+        }
+        header{
+            position: static;
+        }
+        header.rolando{
+            padding: 40px 4%;
+            box-shadow: none;
+        }
+        header.rolando .logo{
+            display: block;
         }
         section.topodosite{
             padding: 20px 5%;
